@@ -4,7 +4,7 @@ MAINTAINER zyfdegg@gmail.com
 ENV	VERSION=3_10_2 \
 	USER=openfire \
 	DIR_DATA=/var/lib/openfire \
-	DIR_LOG=/var/log/openfire
+	DIR_LOG=/var/log/openfire \
 	YUM_REPO=/etc/yum.repos.d
 
 # Fix 'Public key for pkg.rpm is not installed'
