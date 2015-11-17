@@ -7,7 +7,9 @@ ENV	VERSION=3_10_2 \
 	DIR_LOG=/var/log/openfire
 
 #Install pkgs
-RUN yum install -y java-1.8.0-openjdk wget && \
+# Fix 'Public key for pkg.rpm is not installed'
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 && \
+yum install -y java-1.8.0-openjdk wget && \
 mkdir /openfire && \
 wget http://download.igniterealtime.org/openfire/openfire_${VERSION}.tar.gz -O /openfire/openfire_${VERSION}.tar.gz && \
 tar -xzf /openfire_${VERSION}.tar.gz && \
