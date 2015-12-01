@@ -1,0 +1,1 @@
+/openfire/bin/openfire stop

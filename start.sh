@@ -1,1 +1,1 @@
-./openfire/openfire/bin/openfire start
+/openfire/bin/openfire start
